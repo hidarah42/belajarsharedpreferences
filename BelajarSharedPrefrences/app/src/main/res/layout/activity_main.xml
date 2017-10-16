@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hidarah42.belajarsharedprefrences.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/judul"
+        android:text="Belajar Shared Preference"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/judulid"
+        android:text="ID"
+        android:layout_below="@id/judul"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"/>
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etid"
+        android:layout_below="@id/judul"
+        android:layout_toRightOf="@id/judulid"
+        android:layout_marginLeft="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/judulpass"
+        android:text="Pass"
+        android:layout_below="@id/judulid"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"/>
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/etpass"
+        android:layout_below="@id/etid"
+        android:layout_toRightOf="@id/judulid"
+        android:layout_marginLeft="30dp"/>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_save"
+        android:layout_below="@id/etpass"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="10dp"
+        android:text="Save"/>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_display"
+        android:layout_below="@id/etpass"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:text="Display"
+        android:layout_toRightOf="@id/btn_save" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/tvdisplay"
+        android:layout_below="@id/btn_save"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>
